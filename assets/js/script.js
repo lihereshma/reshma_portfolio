@@ -1,31 +1,46 @@
 $(document).ready(function() {
-  // var url = window.location.pathname, 
-  //   urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"); 
-  //   ('#nav-menu a').removeClass('active-link');
-  //   $('#nav-menu a').each(function(){
-  //       if(urlRegExp.test(this.href.replace(/\/$/,''))){
-  //           $(this).addClass('active-link');
-  //       }
-  //   });
+  emailjs.init("J6Xo3LdV6gOryy912");
 
-    var url = window.location.pathname,
-    urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
-    homepageUrl = '/reshmalihe_portfolio/';
-  
-    if (url === homepageUrl) {
-      $('#nav-menu a').each(function() {
-        $(this).removeClass('active-link'); 
-      });
-    } else {
-      $('#nav-menu a').each(function() {
-        if (urlRegExp.test(this.href.replace(/\/$/,''))) {
-          $(this).addClass('active-link');
-        }
-      });
-    }  
+  $("#myForm").submit(function(event) {
+    event.preventDefault();
+
+    var formData = {
+      name: $("#name").val(),
+      email: $("#email").val(),
+      message: $("#message").val()
+    };
+
+    emailjs.send("service_rk9rluu", "template_sqarupe", formData)
+    .then(function(response) {
+        $('.w-form-done').css('display', 'block');
+    }, function(error) {
+      $('.w-form-fail').css('display', 'block');
+    });
+  });
 });
 
 
+
+
+// ------------- Active Menu -------------------------//
+$(document).ready(function() {
+  var url = window.location.pathname,
+  urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
+  homepageUrl = '/reshmalihe_portfolio/';
+
+  if (url === homepageUrl) {
+    $('#nav-menu a').each(function() {
+      $(this).removeClass('active-link'); 
+    });
+  } else {
+    $('#nav-menu a').each(function() {
+      if (urlRegExp.test(this.href.replace(/\/$/,''))) {
+        $(this).addClass('active-link');
+      }
+    });
+  }  
+});
+// --------------------------------------------------------------- //
 
 // ------------ Project List --------------------------- //
 $(document).ready(function() {
