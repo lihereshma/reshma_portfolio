@@ -409,7 +409,7 @@ header #nav-menu a {
   text-decoration: none;
   text-transform: capitalize;
 }
-header #nav-menu a:hover, header #nav-menu a .active-link {
+header #nav-menu a:hover, header #nav-menu a.active-link {
   background-color: #000000;
   color: #ffffff;
 }

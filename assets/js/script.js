@@ -1,3 +1,14 @@
+$(document).ready(function() {
+  var url = window.location.pathname, 
+  urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
+    $('#nav-menu a').each(function(){
+      if(urlRegExp.test(this.href.replace(/\/$/,''))){
+        $(this).addClass('active-link');
+      }
+    });
+});
+
+
 // ------------ Project List --------------------------- //
 $(document).ready(function() {
   projects = 
@@ -242,7 +253,7 @@ $(document).ready(function() {
 
 // ------------ Mouse moving eye animation --------------------------- //
 $(document).ready(function() {
-  if ( window.location.pathname == '/C:/Users/hp/Documents/Reshma/New%20folder/Portfolio/index.html' ){
+  if ( window.location.pathname == '/reshmalihe_portfolio/' ){
     const eyes = $(".js-eye");
     const pupils = $(".js-pupil");
     const eyeRadius = 40;  // pupil max position - percentage from center
