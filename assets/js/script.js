@@ -1,3 +1,5 @@
+
+// --------------- Contact form ---------------- //
 $(document).ready(function() {
   emailjs.init("J6Xo3LdV6gOryy912");
 
@@ -18,9 +20,7 @@ $(document).ready(function() {
     });
   });
 });
-
-
-
+// --------------------------------------------------------------- //
 
 // ------------- Active Menu -------------------------//
 $(document).ready(function() {
