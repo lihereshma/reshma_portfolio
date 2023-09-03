@@ -47,6 +47,12 @@ $(document).ready(function() {
   projects = 
   [
     {
+      "title" : "Bound India", 
+      "img" : "assets/images/boundindia.png", 
+      "url" : "https://www.boundindia.com/", 
+      "category" : "custom" 
+    },
+    {
       "title" : "ACTIVeat",
       "img" : "assets/images/activeat-in.png",
       "url" : "https://activeat.in",
@@ -74,12 +80,6 @@ $(document).ready(function() {
       "title" : "Qualitia", 
       "img" : "assets/images/qualitiasoft.png", 
       "url" : "https://www.qualitiasoft.com/", 
-      "category" : "custom" 
-    },
-    {
-      "title" : "Bound India", 
-      "img" : "assets/images/boundindia.png", 
-      "url" : "https://www.boundindia.com/", 
       "category" : "custom" 
     },
     {
