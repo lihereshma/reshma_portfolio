@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Reshma Lihe</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" media="screen" href="assets/vendor/fontawesome-free-6.4.2-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick-theme.css"/>
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="site-logo">
+        <a href="/" title="Reshma Lihe" title="Reshm Lihe">[ RL ]</a>
+      </div>
+      <div class="site-menu">
+        <div class="nav__toggle" id="nav-toggle">
+          <span class="bar"><i class="fa fa-solid fa-bars"></i></span>
+          <span class="close"><i class="fa fa-solid fa-xmark"></i></span>
+        </div>
+        <nav id="nav-menu">
+          <ul class="header__nav">
+            <li><a href="about.html" title="About">about</a></li>
+            <li><a href="skills.html" title="Skills and Tools">skills &amp; tools</a></li>
+            <li><a href="work.html" title="Work">work</a></li>
+            <li><a href="contact.html" title="Contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-section pattern">
+        <div class="wrapper">
+          <div class="modal-wrapper">
+            <div class="modal-header">
+              <div class="button-circles-wrap">
+                <div class="button-circle"></div>
+                <div class="button-circle"></div>
+              </div>
+              <div>contact.html</div>
+            </div>
+            <div class="modal-body">
+              <div class="wrapper-width-medium">
+                <h1>Say hi!</h1>
+                <p>Fill in your info in the form below and I look forward to hearing from you!</p>
+                <div class="contact-form">
+                  <form action="https://formspree.io/reshmalihe00068@gmail.com" method="POST">
+                    <div class="form-group">
+                      <label for="name">Your Name</label>
+                      <input type="text" name="name" id="name" required="required" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Your Email</label>
+                      <input type="email" name="_replyto" id="email" required="required" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea type="textbox" name="message" id="message" required="required" spellcheck="false" placeholder="Message"></textarea>
+                    </div>
+                    <button class="site-btn submit-btn" value="submit">
+                      <span>Submit</span>
+                    </button>
+                  </form>
+                  <div class="empty-state w-form-done"><div>Thank you! Your submission has been received!</div></div>
+                  <div class="error-message w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="wrapper">
+          <p>© Reshma Lihe <script>document.write(new Date().getFullYear())</script>. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="assets/vendor/jquery-3.7.0.min.js"></script>
+  <script type="text/javascript" src="assets/vendor/slick/slick.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>

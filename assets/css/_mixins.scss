@@ -1,0 +1,34 @@
+@mixin flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* $radius is the parameter of the function */
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin transition-ease {
+  transition: all .5s ease;
+}
