@@ -1,12 +1,30 @@
 $(document).ready(function() {
-  var url = window.location.pathname, 
-  urlRegExp = new RegExp(url == '/' ? window.location.origin + '/reshmalihe_portfolio/' : url.replace(/\/$/,''));
-    $('#nav-menu a').each(function(){
-      if(urlRegExp.test(this.href.replace(/\/$/,''))){
-        $(this).addClass('active-link');
-      }
-    });
+  // var url = window.location.pathname, 
+  //   urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"); 
+  //   ('#nav-menu a').removeClass('active-link');
+  //   $('#nav-menu a').each(function(){
+  //       if(urlRegExp.test(this.href.replace(/\/$/,''))){
+  //           $(this).addClass('active-link');
+  //       }
+  //   });
+
+    var url = window.location.pathname,
+    urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
+    homepageUrl = '/reshmalihe_portfolio/';
+  
+    if (url === homepageUrl) {
+      $('#nav-menu a').each(function() {
+        $(this).removeClass('active-link'); 
+      });
+    } else {
+      $('#nav-menu a').each(function() {
+        if (urlRegExp.test(this.href.replace(/\/$/,''))) {
+          $(this).addClass('active-link');
+        }
+      });
+    }  
 });
+
 
 
 // ------------ Project List --------------------------- //
