@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var url = window.location.pathname, 
-  urlRegExp = new RegExp(url == '/reshmalihe_portfolio/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
+  urlRegExp = new RegExp(url == '/' ? window.location.origin + '/reshmalihe_portfolio/' : url.replace(/\/$/,''));
     $('#nav-menu a').each(function(){
       if(urlRegExp.test(this.href.replace(/\/$/,''))){
         $(this).addClass('active-link');
