@@ -784,6 +784,7 @@ footer p {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .skills-section .skills__box > li {
   width: 48%;

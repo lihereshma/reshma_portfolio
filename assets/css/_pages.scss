@@ -268,6 +268,7 @@
   .skills__box {
     margin-top: 2em;
     @include flex-space-between;
+    align-items: flex-start;
 
     & > li {
       width: 48%;
