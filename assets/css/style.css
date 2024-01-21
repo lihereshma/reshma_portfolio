@@ -651,6 +651,7 @@ footer p {
   flex-direction: column;
 }
 .contact-details-section .contact-wrap .modal-wrapper {
+  margin-top: 1em;
   background-color: #F6F1F1;
 }
 @media screen and (max-width: 479px) {
@@ -679,7 +680,6 @@ footer p {
   }
   .contact-details-section .contact-wrap > div:nth-of-type(2) {
     width: 38%;
-    margin-top: 5em;
   }
 }
 
@@ -742,6 +742,22 @@ footer p {
 }
 .about-section h4 a:hover {
   color: #19A7CE;
+}
+.about-section li {
+  margin-bottom: 1em;
+  display: block;
+}
+.about-section li p {
+  margin: 0;
+}
+.about-section ol {
+  margin-bottom: 3em;
+}
+.about-section ol li {
+  margin-bottom: 0.5em;
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: disc;
 }
 
 .work-section .projects__container {

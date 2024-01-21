@@ -117,6 +117,7 @@
     flex-direction: column;
 
     .modal-wrapper {
+      margin-top: 1em;
       background-color: $grey;
     }
   } 
@@ -146,7 +147,6 @@
   
       &:nth-of-type(2) {
         width: 38%;
-        margin-top: 5em;
       }
     }
   }
@@ -219,6 +219,26 @@
 
     &:hover {
       color: $light-blue;
+    }
+  }
+
+  li {
+    margin-bottom: 1em;
+    display: block;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  ol {
+    margin-bottom: 3em;
+
+      li {
+        margin-bottom: .5em;
+        display: list-item;
+        list-style-position: inside;
+        list-style-type: disc;   
     }
   }
 }

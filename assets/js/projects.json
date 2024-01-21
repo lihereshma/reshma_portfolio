@@ -2,7 +2,7 @@
   {
     "title" : "Bound India", 
     "img" : "assets/images/boundindia.png", 
-    "url" : "https://www.boundindia.com/", 
+    "url" : "https://www.boundindia.com", 
     "category" : "custom" 
   },
   {
@@ -32,14 +32,14 @@
   {
     "title" : "Gits Food", 
     "img" : "assets/images/gitsfood.png", 
-    "url" : "https://www.gitsfood.com/", 
+    "url" : "https://www.gitsfood.com", 
     "category" : "custom" 
   },
   {
-    "title" : "Qualitia", 
-    "img" : "assets/images/qualitiasoft.png", 
-    "url" : "https://www.qualitiasoft.com/", 
-    "category" : "custom" 
+    "title" : "Shopping List", 
+    "img" : "assets/images/shoppinglist.png", 
+    "url" : "https://lihereshma.github.io/React-ShoppingList", 
+    "category" : "react" 
   },
   {
     "title" : "Shea Ray", 
@@ -132,39 +132,15 @@
     "category" : "custom" 
   },
   {
-    "title" : "Star Magic Healing", 
-    "img" : "assets/images/starmagichealing.png", 
-    "url" : "https://www.starmagichealing.com/", 
-    "category" : "custom" 
-  },
-  {
     "title" : "Nick & KO", 
     "img" : "assets/images/nickandko.png", 
     "url" : "https://nickandko.com/", 
     "category" : "custom" 
   },
   {
-    "title" : "City Therapy", 
-    "img" : "assets/images/citytherapy.png", 
-    "url" : "https://www.citytherapy.ie/", 
-    "category" : "custom" 
-  },
-  {
-    "title" : "Throughput", 
-    "img" : "assets/images/throughput-world.png", 
-    "url" : "https://throughput.world/", 
-    "category" : "custom" 
-  },
-  {
     "title" : "House of Scholars", 
     "img" : "assets/images/houseofscholars.png", 
     "url" : "https://houseofscholars.net/", 
-    "category" : "custom" 
-  },
-  {
-    "title" : "Bottoms Up Colonicss", 
-    "img" : "assets/images/bottomsupcolonics.png", 
-    "url" : "https://bottomsupcolonics.com.au/", 
     "category" : "custom" 
   }
 ]
