@@ -28,17 +28,17 @@ $(document).ready(function() {
   urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
   homepageUrl = '/reshmalihe_portfolio/';
 
-  // if (url === homepageUrl) {
-  //   $('#nav-menu a').each(function() {
-  //     $(this).removeClass('active-link'); 
-  //   });
-  // } else {
+  if (url === homepageUrl) {
+    $('#nav-menu a').each(function() {
+      $(this).addClass('active-link'); 
+    });
+  } else {
     $('#nav-menu a').each(function() {
       if (urlRegExp.test(this.href.replace(/\/$/,''))) {
         $(this).addClass('active-link');
       }
     });
-  // }  
+  }  
 });
 // --------------------------------------------------------------- //
 
