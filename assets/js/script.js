@@ -28,9 +28,12 @@ $(document).ready(function() {
   urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
   homepageUrl = '/reshmalihe_portfolio/';
 
+  // Extract path from the URL
+  var path = url.replace(/\/$/, '');
+
   if (url === homepageUrl) {
     $('#nav-menu a').each(function() {
-      $(this).addClass('active-link'); 
+      $(this).removeClass('active-link'); 
     });
   } else {
     $('#nav-menu a').each(function() {
