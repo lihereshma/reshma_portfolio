@@ -1,48 +1,51 @@
 
 // --------------- Contact form ---------------- //
-$(document).ready(function() {
-  emailjs.init("J6Xo3LdV6gOryy912");
+// $(document).ready(function() {
+//   emailjs.init("J6Xo3LdV6gOryy912");
 
-  $("#myForm").submit(function(event) {
-    event.preventDefault();
+//   $("#myForm").submit(function(event) {
+//     event.preventDefault();
 
-    var formData = {
-      name: $("#name").val(),
-      email: $("#email").val(),
-      message: $("#message").val()
-    };
+//     var formData = {
+//       name: $("#name").val(),
+//       email: $("#email").val(),
+//       message: $("#message").val()
+//     };
 
-    emailjs.send("service_rk9rluu", "template_sqarupe", formData)
-    .then(function(response) {
-        $('.w-form-done').css('display', 'block');
-    }, function(error) {
-      $('.w-form-fail').css('display', 'block');
-    });
-  });
-});
+//     emailjs.send("service_rk9rluu", "template_sqarupe", formData)
+//     .then(function(response) {
+//         $('.w-form-done').css('display', 'block');
+//     }, function(error) {
+//       $('.w-form-fail').css('display', 'block');
+//     });
+//   });
+// });
 // --------------------------------------------------------------- //
 
 // ------------- Active Menu -------------------------//
 $(document).ready(function() {
   var url = window.location.pathname,
-  urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
-  homepageUrl = '/reshmalihe_portfolio/';
+      urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
+      homepageUrl = '/reshmalihe_portfolio/';
 
   // Extract path from the URL
   var path = url.replace(/\/$/, '');
 
-  if (url === homepageUrl) {
-    $('#nav-menu a').each(function() {
-      $(this).removeClass('active-link'); 
-    });
+  $('#nav-menu a').each(function() {
+    $(this).removeClass('active-link');
+  });
+
+  if (path === homepageUrl) {
+    $('#nav-menu a[href="./"]').addClass('active-link');
   } else {
     $('#nav-menu a').each(function() {
-      if (urlRegExp.test(this.href.replace(/\/$/,''))) {
+      if (urlRegExp.test(this.pathname.replace(/\/$/,''))) {
         $(this).addClass('active-link');
       }
     });
   }  
 });
+
 // --------------------------------------------------------------- //
 
 // ------------ Project List --------------------------- //
