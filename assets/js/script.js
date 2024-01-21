@@ -1,25 +1,25 @@
 
 // --------------- Contact form ---------------- //
-// $(document).ready(function() {
-//   emailjs.init("J6Xo3LdV6gOryy912");
+$(document).ready(function() {
+  emailjs.init("J6Xo3LdV6gOryy912");
 
-//   $("#myForm").submit(function(event) {
-//     event.preventDefault();
+  $("#myForm").submit(function(event) {
+    event.preventDefault();
 
-//     var formData = {
-//       name: $("#name").val(),
-//       email: $("#email").val(),
-//       message: $("#message").val()
-//     };
+    var formData = {
+      name: $("#name").val(),
+      email: $("#email").val(),
+      message: $("#message").val()
+    };
 
-//     emailjs.send("service_rk9rluu", "template_sqarupe", formData)
-//     .then(function(response) {
-//         $('.w-form-done').css('display', 'block');
-//     }, function(error) {
-//       $('.w-form-fail').css('display', 'block');
-//     });
-//   });
-// });
+    emailjs.send("service_rk9rluu", "template_sqarupe", formData)
+    .then(function(response) {
+        $('.w-form-done').css('display', 'block');
+    }, function(error) {
+      $('.w-form-fail').css('display', 'block');
+    });
+  });
+});
 // --------------------------------------------------------------- //
 
 // ------------- Active Menu -------------------------//
