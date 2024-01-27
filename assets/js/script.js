@@ -23,28 +23,27 @@
 // --------------------------------------------------------------- //
 
 // ------------- Active Menu -------------------------//
-$(document).ready(function() {
-  var url = window.location.pathname,
-      urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
-      homepageUrl = '/reshmalihe_portfolio/';
+// $(document).ready(function() {
+//   var url = window.location.pathname,
+//       urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"),
+//       homepageUrl = '/reshmalihe_portfolio/';
 
-  // Extract path from the URL
-  var path = url.replace(/\/$/, '');
+//   var path = url.replace(/\/$/, '');
 
-  $('#nav-menu a').each(function() {
-    $(this).removeClass('active-link');
-  });
+//   $('#nav-menu a').each(function() {
+//     $(this).removeClass('active-link');
+//   });
 
-  if (path === homepageUrl) {
-    $('#nav-menu a[href="./"]').addClass('active-link');
-  } else {
-    $('#nav-menu a').each(function() {
-      if (urlRegExp.test(this.pathname.replace(/\/$/,''))) {
-        $(this).addClass('active-link');
-      }
-    });
-  }  
-});
+//   if (path === homepageUrl) {
+//     $('#nav-menu a[href="./"]').addClass('active-link');
+//   } else {
+//     $('#nav-menu a').each(function() {
+//       if (urlRegExp.test(this.pathname.replace(/\/$/,''))) {
+//         $(this).addClass('active-link');
+//       }
+//     });
+//   }  
+// });
 
 // --------------------------------------------------------------- //
 
