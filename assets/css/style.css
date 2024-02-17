@@ -751,12 +751,13 @@ footer p {
   margin: 0;
 }
 .about-section ol {
+  padding-left: 1em;
   margin-bottom: 3em;
 }
 .about-section ol li {
   margin-bottom: 0.5em;
   display: list-item;
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-type: disc;
 }
 
