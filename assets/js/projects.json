@@ -24,6 +24,12 @@
     "category" : "custom"
   },
   {
+    "title" : "Gits Food", 
+    "img" : "assets/images/gitsfood.png", 
+    "url" : "https://www.gitsfood.com", 
+    "category" : "custom" 
+  },
+  {
     "title" : "ACTIVeat",
     "img" : "assets/images/activeat-in.png",
     "url" : "https://activeat.in",
@@ -40,12 +46,6 @@
     "img" : "assets/images/buddinginfluencers.png",
     "url" : "https://buddinginfluencers.com",
     "category" : "custom"
-  },
-  {
-    "title" : "Gits Food", 
-    "img" : "assets/images/gitsfood.png", 
-    "url" : "https://www.gitsfood.com", 
-    "category" : "custom" 
   },
   {
     "title" : "Shopping List", 
